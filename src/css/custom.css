@@ -1,0 +1,455 @@
+.pageTopGenieArea {
+  overflow: hidden;
+  height: 260px;
+  position: relative;
+  background-image: url(../images/kt_tv/genietv_top_bg.png);
+  background-repeat: repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.channel_content .sub-tabs .sub-trigger {
+  position: relative;
+  float: none;
+  top: 0;
+}
+
+.tabs .sub-tabs .sub-trigger {
+  float: none;
+  display: inline-block;
+  margin: 0 0 0;
+  font-size: 24px;
+  color: #222;
+}
+
+.tabs {
+  height: 29px;
+}
+.tabs .sub-tabs {
+  position: relative;
+  margin-top: auto;
+}
+.tabs .sub-tabs:before {
+  content: none !important;
+}
+
+.channel_content .sub-tabs {
+  padding-top: initial !important;
+}
+
+.channel_content .sub-tabs-1st .submenus2nd {
+  left: initial;
+}
+
+.channel_content .channel_form .search-area {
+  padding-top: 0;
+}
+
+.tabs > ul {
+  min-height: auto !important;
+}
+
+.tabs > ul > li {
+  float: none;
+  width: auto;
+}
+
+.tabs {
+  overflow: hidden;
+  position: relative;
+  padding-top: 0;
+}
+
+.tabs-genie-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin: 42px 0 22px 0;
+}
+.tabs-genie-menu span {
+  text-indent: -9999px;
+  line-height: normal;
+}
+.tabs-genie-menu a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tabs-genie-menu a.sub-trigger:before {
+  content: none;
+  background-color: transparent;
+  margin: 0;
+}
+.tabs-genie-menu a.sub-trigger:first-child:before {
+  margin-left: 0;
+}
+.tabs-genie-menu a.submenus1st:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/kt_tv/tab_genie_01_off.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 134px !important;
+  height: 29px !important;
+  background-size: 134px 25px;
+  top: initial;
+}
+.tabs-genie-menu a.submenus1st:after {
+  content: "";
+  width: 2px;
+  height: 29px;
+  background-color: #b2b2b2;
+  display: inline-block;
+  margin: 0 16px;
+}
+.tabs-genie-menu a.submenus1st.active:before {
+  background-image: url("../images/kt_tv/tab_genie_01_on.png");
+}
+.tabs-genie-menu a.submenus2nd:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/kt_tv/tab_genie_02_off.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 201px !important;
+  height: 29px !important;
+  background-size: 201px 29px;
+  top: initial;
+}
+.tabs-genie-menu a.submenus2nd.active:before {
+  background-image: url("../images/kt_tv/tab_genie_02_on.png");
+}
+
+.channel_content .channel_form {
+  padding-right: 0;
+  margin-top: 50px;
+}
+
+.channel_content .channel_tab_slider .channel_lists .channel .ch .pay:before,
+.channel_content .channel_form .list_legend span.ex:before {
+  content: "";
+  background-image: url("../images/kt_tv/icon-ex-channel.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 37px 20px;
+  width: 37px;
+  height: 20px;
+}
+
+.genietv-tab-pannel {
+  position: relative;
+  width: 1080px;
+}
+.genietv-tab-pannel.tvLive {
+  height: 628px;
+  min-height: 628px;
+  max-height: 628px;
+  overflow: hidden;
+  background-image: url("../images/kt_tv/genietv-channel-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 1080px 628px;
+}
+.genietv-tab-pannel.skyLife {
+  height: 292px;
+  min-height: 292px;
+  max-height: 292px;
+  overflow: hidden;
+  background-image: url("../images/kt_tv/genietv-channel2-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 1080px 292px;
+}
+.genietv-tab-pannel > .tab-contents {
+  width: 825px;
+  position: absolute;
+  background-color: transparent;
+  display: none;
+}
+.genietv-tab-pannel > .tab-contents.tvl {
+  right: 35px;
+  bottom: 37px;
+  height: 550px;
+  max-height: 550px;
+}
+.genietv-tab-pannel > .tab-contents.skytv {
+  right: 35px;
+  bottom: 3px;
+  height: 250px;
+  max-height: 250px;
+}
+.genietv-tab-pannel > .tab-contents.active {
+  display: block;
+}
+.genietv-tab-pannel .channel_select {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  gap: 13px 10px;
+}
+.genietv-tab-pannel .channel_select.tv_live li:last-child {
+  grid-column: 1/5;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+}
+.genietv-tab-pannel .channel_select li {
+  position: relative;
+}
+.genietv-tab-pannel .channel_select li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 195px;
+  min-height: 96px;
+  border: 1px solid #ddd;
+  color: #000;
+  font-size: 22px;
+  background-color: #fff;
+  border-radius: 13px;
+  text-align: center;
+  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.1);
+  position: relative;
+  z-index: 2;
+}
+.genietv-tab-pannel .channel_select li a.trigger {
+  padding: 0;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+.genietv-tab-pannel .channel_select li a.active {
+  background-color: #6941ff;
+  color: #fff;
+}
+
+.option-area {
+  position: absolute;
+  top: 2px;
+  right: 0;
+  height: calc(100% - 26px);
+  display: grid;
+  padding: 10px 0;
+  grid-template-columns: 32px 1fr 33% 1fr;
+  grid-template-rows: auto;
+  background-color: #fff;
+  z-index: 0;
+  border-radius: 13px;
+  box-shadow: 10px 10px 5px -5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ddd;
+  width: 78%;
+  align-items: center;
+  gap: 0 18px;
+}
+.option-area .chkbox-wrp label {
+  font-size: 16px;
+}
+
+.hide {
+  display: none;
+}
+
+.channels_accordion {
+  position: relative;
+  border-top: 1px solid #555555;
+  display: flex;
+  flex-direction: column;
+  margin-top: 35px;
+}
+.channels_accordion .li {
+  position: relative;
+  border-bottom: 1px solid #a6a6a6;
+  background-color: #fff;
+}
+.channels_accordion .li .ch-links {
+  font-size: 22px;
+  font-weight: 700;
+  display: block;
+  padding: 22px 34px 22px 35px;
+  max-height: 67px;
+  line-height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+}
+.channels_accordion .li .ch-links:after {
+  content: "";
+  display: block;
+  width: 31px;
+  height: 18px;
+  background-image: url("../images/kt_tv/accor-icon-arrow-down.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 31px 18px;
+}
+.channels_accordion .li .ch-links.active:after {
+  transform: rotate(180deg);
+}
+.channels_accordion .li .ch-links.active {
+  box-shadow: -1px 6px 20px -5px rgba(0, 0, 0, 0.3);
+}
+.channels_accordion .li .channel_lists .channel:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 0;
+  background-color: #555555;
+  height: 2px;
+  width: 100%;
+  z-index: 2;
+}
+
+.channel_lists {
+  display: none;
+}
+.channel_lists .channel {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 0px;
+  border: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+}
+.channel_lists li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  list-style: none;
+  border-bottom: 1px solid #a4a4a4;
+}
+.channel_lists li a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 34px 0 34px 29px;
+  white-space: nowrap;
+}
+.channel_lists li a:hover .ch, .channel_lists li a.und .ch {
+  color: #6941ff;
+  text-decoration: underline;
+  font-weight: bold;
+}
+.channel_lists li .ch {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 16px;
+  font-size: 14.4px;
+  height: 18px;
+  font-size: 100%;
+  color: #000;
+}
+.channel_lists li .ch strong {
+  font-weight: 700;
+}
+.channel_lists li .ch.on {
+  background-color: #c8c8c8;
+  padding: 1px 2px 1px 0;
+  border-radius: 2px;
+}
+.channel_lists .wrap-icon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+
+.ch-icon-exclude {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.ch-icon-exclude:before {
+  display: inline-block;
+  content: "";
+  background-image: url("../images/kt_tv/icon-ex-channel.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 37px 20px;
+  width: 37px;
+  height: 20px;
+}
+
+.ch-icon-undh {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.ch-icon-undh:before {
+  display: inline-block;
+  content: "";
+  background-image: url("../images/kt_tv/icon-undh.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.ch-icon-won {
+  display: inline-block;
+  position: relative;
+  top: 2px;
+}
+.ch-icon-won:before {
+  display: inline-block;
+  content: "";
+  background-image: url("../images/kt_tv/icon-won.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 20px 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.channel_content .schedule_tab > .lst > li > .tab-trigger.active {
+  color: #6941ff !important;
+}
+
+.schedule_tab_menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  margin-top: 70px;
+}
+.schedule_tab_menu a {
+  display: block;
+  width: 50%;
+  height: 45px;
+  text-align: center;
+  line-height: 43px;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: transparent;
+  color: #222;
+  font-size: 24px;
+  font-weight: bold;
+  position: relative;
+}
+.schedule_tab_menu a:hover {
+  color: #222;
+}
+.schedule_tab_menu a.active {
+  color: #6139f1;
+}
+.schedule_tab_menu a.active:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background-color: #6139f1;
+  background-color: #6139f1;
+}
+
+.schedule_tab_content {
+  padding-top: 34px;
+}
