@@ -586,3 +586,13 @@
 .schedule_tab_content {
   padding-top: 34px;
 }
+
+.genietv-tab-pannel {
+  .channel_select {
+    .option-area [type="checkbox"]+label {
+
+      background-image: url(../images/kt_tv/bg-form-checkboxs.png) !important;
+    }
+  }
+
+}
