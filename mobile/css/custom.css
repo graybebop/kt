@@ -1,1 +1,223 @@
-/*# sourceMappingURL=custom.css.map */
+.pageTopGenieArea {
+  overflow: hidden;
+  height: 84px;
+  position: relative;
+  background-image: url(../images/kt_tv/genietv_top_bg.png);
+  background-repeat: repeat;
+  background-position: center;
+  background-size: 100% 84px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.pageTopGenieArea .pageTitle img {
+  height: 32px;
+}
+
+.tabs-genie-menu {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 30px 0 30px 0;
+}
+.tabs-genie-menu span {
+  text-indent: -9999px;
+  line-height: normal;
+}
+.tabs-genie-menu a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.tabs-genie-menu a.sub-trigger:before {
+  content: none;
+  background-color: transparent;
+  margin: 0;
+}
+.tabs-genie-menu a.sub-trigger:first-child:before {
+  margin-left: 0;
+}
+.tabs-genie-menu a.submenus1st:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/kt_tv/tab_genie_01_off.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 117px !important;
+  height: 24px !important;
+  background-size: 100%;
+  top: initial;
+}
+.tabs-genie-menu a.submenus1st:after {
+  content: "";
+  width: 2px;
+  height: 29px;
+  background-color: #858585;
+  display: inline-block;
+  margin: 0 26px 0 69px;
+}
+.tabs-genie-menu a.submenus1st.active:before {
+  background-image: url("../images/kt_tv/tab_genie_01_on.png");
+}
+.tabs-genie-menu a.submenus2nd:before {
+  content: "";
+  display: inline-block;
+  background-image: url("../images/kt_tv/tab_genie_02_off.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 173px !important;
+  height: 24px !important;
+  background-size: 100%;
+  top: initial;
+}
+.tabs-genie-menu a.submenus2nd.active:before {
+  background-image: url("../images/kt_tv/tab_genie_02_on.png");
+}
+
+.mktTvinfo .selectMenu {
+  padding: 0;
+}
+.mktTvinfo .selectMenu .selectBox {
+  width: 100%;
+}
+
+.genie-searchg-form {
+  display: block;
+  position: relative;
+  margin: 20px 0 32px;
+}
+.genie-searchg-form .genie-searchg-div {
+  display: block;
+  margin-bottom: 0;
+}
+.genie-searchg-form .genie-searchg-div input {
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 18px;
+  text-align: left;
+  text-indent: 0;
+  font-weight: normal;
+  font-size: 15px;
+  color: #000;
+  border: none;
+  border: none !important;
+  border-radius: 9px;
+  background: #f7f7f7;
+}
+.genie-searchg-form .btn-genie-search {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 20px;
+  height: 20px;
+  white-space: nowrap;
+  background: url(../images/kt_tv/genie_icon_search.png);
+  background-position: center right;
+  background-size: 20px;
+  color: transparent;
+  background-repeat: no-repeat;
+}
+
+.icon-display-wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 13px;
+  align-items: center;
+}
+.icon-display-wrap .icons {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 4px;
+}
+
+.icons-uhd img {
+  width: 20px;
+  height: 20px;
+}
+
+.icons-won img {
+  width: 20px;
+  height: 20px;
+}
+
+.icons-excl img {
+  width: 30px;
+  height: 20px;
+}
+
+.list-nav-contents .icons-uhd img {
+  width: 16px;
+  height: 16px;
+}
+.list-nav-contents .icons-won img {
+  width: 16px;
+  height: 16px;
+}
+.list-nav-contents .icons-excl img {
+  width: 25px;
+  height: 16px;
+}
+
+.mktTvinfo .navigator .wrapNavigator .listNavigator .swiper-wrapper .swiper-slide.active a {
+  color: #3300ed;
+}
+
+.mktTvinfo .navigator .wrapChennel .swiper-wrapper .swiper-slide ul li a.selected {
+  color: #3300ed;
+}
+
+.mktTvinfo .navigator .wrapChennel .swiper-wrapper .swiper-slide ul li a.selected span {
+  border-bottom: 1px solid #3300ed;
+}
+
+.mktTvinfo .navigator .wrapChennel .swiper-wrapper .swiper-slide ul li a {
+  display: flex !important;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ch-excl {
+  padding: 3px 2px !important;
+  background-color: #c8c8c8;
+}
+
+.mktTvinfo .navigator .wrapChennel .swiper-wrapper .swiper-slide ul li a span {
+  padding: 0;
+}
+
+.mktTvinfo .navigator .wrapChennel .swiper-wrapper .swiper-slide ul li a .icons-uhd,
+.mktTvinfo .navigator .wrapChennel .swiper-wrapper .swiper-slide ul li a .icons-won {
+  margin-left: 4px;
+  display: inline-block;
+}
+
+.mktTvinfo .notice .desc a,
+.mktTvinfo .accodion-box .listDot a {
+  color: #3300ed;
+  border-bottom: 1px solid #3300ed;
+}
+
+.srch-txt-rslt {
+  padding: 25px 0 0 0;
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+.srch-txt-rslt em {
+  color: #3300ed;
+}
+
+.mktTvinfo .navigator .wrapChennel {
+  margin: 20px 15px 0;
+}
+
+.mktTvinfo .schedule .tabSchedule .listTab li.selected a {
+  color: #3300ed;
+}
