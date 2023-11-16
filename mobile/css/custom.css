@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .pageTopGenieArea {
   overflow: hidden;
   height: 84px;
@@ -220,4 +221,39 @@
 
 .mktTvinfo .schedule .tabSchedule .listTab li.selected a {
   color: #3300ed;
+}
+
+.mktTvinfo .selectMenu .selectBox select {
+  border-radius: 9px;
+  padding-right: 30px;
+  /* 화살표 스타일링 */
+  position: relative;
+}
+.mktTvinfo .selectMenu .selectBox select {
+  width: 100%;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  /* 크롬, 사파리 */
+  -moz-appearance: none;
+  /* 파이어폭스 */
+  appearance: none;
+  /* 기타 브라우저 */
+}
+
+.mktTvinfo .selectMenu .selectBox:after {
+  content: "";
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-image: url("../images/kt_tv/icon-arrow-down.png");
+  background-size: 15px 10px;
+  width: 15px;
+  height: 10px;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform-origin: center;
+}
+.mktTvinfo .selectMenu .selectBox.active:after {
+  background-image: url("../images/kt_tv/icon-arrow-up.png");
 }

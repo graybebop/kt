@@ -100,6 +100,21 @@
 						$(".genietv-tab-pannel").addClass("skyLife").removeClass("tvLive");
 					}
 					// /tab메뉴 누를시 여기까지 추가
+					//.selectBox 클릭시 화살표 반전시키기 위한 스크립트
+				});
+				$(".selectBox").on("click", function (e) {
+					e.stopPropagation(); // 이벤트 버블링 방지
+					if ($(this).hasClass("active")) {
+						$(this).removeClass("active");
+					} else {
+						$(this).addClass("active");
+					}
+				});
+
+				$(document).on("click touchend", function (e) {
+					if ($(e.target).closest(".selectBox").length === 0 && $(".selectBox:visible").hasClass("active")) {
+						$(".selectBox").removeClass("active");
+					}
 				});
 			});
 
